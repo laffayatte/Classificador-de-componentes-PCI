@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root{
+  --color-blue:#6C5CE7;
+  --color-white: #fff;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+}
+
+html {
+  font-size: 63.5%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #F7F7F7;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 1.6rem;
+  width: 90%;
+  margin: auto;
+}
+
+html,
+body {
+    font-family: "Montserrat";
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgb(240, 240, 240);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #c2c2c2;
+    border-radius: 10px 10px 10px 10px;
+}
+
+html::-webkit-scrollbar {
+  width: .3px;
+  height: .3px;
+}
+
+div.blue-background {
+  height: 400px;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(98, 151, 182, 0.774);
+  z-index: -10000;
+  animation: colors 15s ease infinite;
+}
+
+.content .controle {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.content .controle a {
+  background-color: rgba(98, 151, 182, 0.774);
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px 1px rgb(155, 155, 155);
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content .controle a:hover{
+  background-color: rgb(127, 238, 241); 
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.30);
+}
+
+.content .controle a img {
+  margin-right: 10px;
+}
+
+.content .controle .next img {
+  margin: 0 0 0 10px;
+}
+
+.header{
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+} 
+
+.header .logo{
+  font-size: 3.5rem;
+  color: white;
+}
+
+.header .logo i{
+  padding:0 .5rem;
+}
+
+.header .navbar ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.header .navbar ul li{
+  margin: 0 1.5rem;
+}
+
+.header .navbar ul li a{
+  font-size: 2rem;
+  color: white;
+}
+
+.header .navbar ul li a:hover{
+  color:#ccc;
+}
+
+section.content {
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 50px 150px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 1px rgb(155, 155, 155);
+} 
+
+
+section.content h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+}
+
+section.content h2 {
+  text-align: center;
+  width: 100%;
+}
+
+section.content .texts .explication ul {
+  margin-left: 35px;
+  font-size: 2.0rem;
+  line-height: 40px;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+
+.content .texts .legend  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+section.content .texts .legend a{
+  margin-top: 30px;
+  font-size: 15px;
+}
+section.content .texts .legend img{
+  width: 400px;
+}
+
+section.content p {
+  font-size: 2.0rem;
+  text-align: justify;
+  line-height: 40px;
+  margin: 20px 0 20px 0;
+}
+
+.content .go-top {
+  display: flex;
+  justify-content: center;
+}
+
+.content .go-top img {
+  cursor: pointer
+}
+
+/* responsividade */
+@media (max-width: 660px){
+  html{
+    font-size: 50%;
+  }
+  .header .logo{
+    font-size: 2.4rem;
+  }
+  .header .navbar ul li a{
+    font-size: 1.9rem;
+  }
+  header .brand {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px
+  }
+  header .brand .title {
+    text-align: center;
+    margin: 20px 0 0 0;
+  }
+ }
+
+@media (max-width: 1000px) {
+  section.content {
+      padding: 50px 50px
+  }
+}
+
+@media (max-width: 550px){
+  section.content .texts .legend img{
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .content .controle {
+      flex-direction: column;
+      margin-top: 15px;
+      margin-bottom: 25px;
+  }
+  .content .controle a {
+      justify-content: center;
+  }
+  .content .controle .back {
+      margin: 20px 0 10px 0;
+  }
+  .content .controle .next {
+      margin: 10px 0 10px 0;
+  }
+  .content .go-top img {
+      width: 30px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+      font-size: 45%;
+  }
+  div.blue-background {
+      height: 60vh;
+  }
+  section.content {
+      padding: 10px 10px;
+  }
+}
+
+@media (max-width: 320px){
+  section.content .texts .legend img{
+    width: 260px;
+  }
+}
+
